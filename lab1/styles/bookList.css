@@ -1,0 +1,31 @@
+.bookList {
+  list-style: none;
+  display: grid;
+}
+
+.book {
+  width: 10rem;
+  height: 7rem;
+
+  padding: 10px 12px;
+  border-radius: 1rem;
+  background-color: aliceblue;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.book__name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.book__author {
+  font-size: 0.55rem;
+}
+
+.book__description {
+  font-size: 0.4rem;
+}

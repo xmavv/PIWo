@@ -1,0 +1,21 @@
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  gap: 1rem;
+
+  background-color: red;
+  padding: 1rem;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header__input {
+  border-radius: 5px;
+  justify-self: center;
+  min-width: 80%;
+  padding: 2px 3px;
+}
