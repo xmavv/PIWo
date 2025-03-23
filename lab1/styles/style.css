@@ -4,13 +4,21 @@
   grid-template-rows: 3rem 1fr 2rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 67.5%;
+
+  --color-background: #ebe8db;
+  --color-primary: #b03052;
+  --color-secondary: #f9a2b4;
+  --color-accent: #3d0301;
 }
 
 .main {
-  padding: 2rem 3rem;
-  background-color: green;
+  padding: 2rem 12%;
+  background-color: var(--color-background);
+  background-image: linear-gradient(white, white);
 }
 
 .footer {
-  background-color: blue;
+  background-color: var(--color-accent);
+  color: var(--color-secondary);
+  padding: 3px 12%;
 }

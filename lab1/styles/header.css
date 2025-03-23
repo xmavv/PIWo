@@ -1,13 +1,21 @@
 .header {
   display: grid;
   grid-template-columns: auto 1fr auto auto;
+  align-content: center;
   gap: 1rem;
 
-  background-color: red;
-  padding: 1rem;
+  background-color: var(--color-primary);
+  background-image: linear-gradient(
+    -90deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  padding: 1rem 12%;
 }
 
 .header__logo {
+  font-size: 1.1rem;
+  color: var(--color-accent);
   display: flex;
   align-items: center;
   gap: 5px;
@@ -17,5 +25,25 @@
   border-radius: 5px;
   justify-self: center;
   min-width: 80%;
-  padding: 2px 3px;
+  padding: 4px 7px;
+
+  background-color: transparent;
+  border: 1px solid #3d0301;
+  color: var(--color-secondary);
+  background-color: rgba(61, 3, 1, 0.3);
+  transition: all 0.3s ease;
+}
+
+.header__input:focus {
+  min-width: 85%;
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
+.header__input::placeholder {
+  color: var(--color-accent);
+}
+
+.header__input:focus::placeholder {
+  color: var(--color-primary);
 }
